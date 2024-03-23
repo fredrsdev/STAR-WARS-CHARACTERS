@@ -1,0 +1,10 @@
+Ajustar o modo responsividade para os tamanhos de tela;
+
+Adicionar outros temas no projeto;
+
+Brak points (pontos de quebra) mais usados no responbsive (media query):
+
+ - 480px Mobile
+ - 768px Tables
+ - 1280px Monitores
+ - 1024px Monitores

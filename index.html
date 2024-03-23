@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star War Chacteres | Fred Reis</title>
+    <link rel="stylesheet" href="style.css"> <!-- link do arquivo CSS-->
+    <link rel="shortcut icon" href="./assets/millennium-falcon.png" type="image/x-icon"> <!-- comando para colocar icone no navegador -->
+
+</head>
+<body>
+
+    <!-- Cabeçario da pagina: --> 
+    <header>
+    
+    <a href="./index.html"> <!-- tag "a" ancora, redireciona quando clicar na logo volta para pagina inicial-->
+        <div class="logo">
+            <img src="./assets/star-wars-logo.png" alt="logo" class="logo-img" />
+            <span class="logo-text">Chacteres</span>
+        </div>
+    </a>
+
+        <div class="social-media">
+        <a href="https://instagram.com/fredreis" target="_blank"> <!-- target="_blank", para abrir em outra aba-->
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://facebook.com/fredreis" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    
+        <a href="https://github.com/fredreis" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+         <a href="https://www.linkedin.com/in/fredreis" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>   
+
+        </div>
+    
+    </header>
+
+    <!-- Div main-cotainer por quê? / local onde fica toda estrutura do corpo da página -->
+
+    <div class="main-container">
+       
+        <h2>Conheca todos os personagens de Star Wars em um so lugar</h2>
+
+        <div class="main-content" id="main-content"></div>
+           
+            <!-- O conteudo de DIV main-content está sendo gerado pelo javaScript na função: responseJson.results.forEach((character)-->
+
+            <!-- Div modal irá carregas as informações dos personagens -->
+
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+
+        <div class="buttons">
+              <button id="back-button" disabled>Anterior</button>
+              <button id="next-button" disabled>Próxima</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="footer-logo"> Star Wars Chacteres</p>
+        <p class="copyrigth">Desenvolvido por &copy; Fred Reis</p>
+    </footer>
+
+    <!-- link para conexão com arquivo.js para adição dos icones social media através da URL -->
+    <script src="https://kit.fontawesome.com/a747b09475.js" crossorigin="anonymous"></script>
+
+    <!-- use o link do java script no final antes /body do mais adequado -->
+        <script src="./script.js"></script>
+</body>
+</html>
+
